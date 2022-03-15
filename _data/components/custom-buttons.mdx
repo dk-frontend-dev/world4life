@@ -1,0 +1,59 @@
+---
+title: Custom Buttons
+---
+
+##### Animate Button
+
+<Block sx={{ textAlign: 'center', '& > *': { mx: 2 } }}>
+  <IconButton />
+  <FabButton />
+  <FabButton variant='extended' color='secondary'>
+    Extended
+  </FabButton>
+</Block>
+
+```jsx
+import { IconButtonAnimate, FabButtonAnimate } from '../../src/components'
+
+// ----------------------------------------------------------------------
+;<IconButtonAnimate>
+  <Iconify icon={playIcon} />
+</IconButtonAnimate>
+;<FabButtonAnimate>
+  <Iconify icon={playIcon} />
+</FabButtonAnimate>
+;<FabButtonAnimate variant='extended' color='secondary'>
+  <Iconify icon={playIcon} /> Extended
+</FabButtonAnimate>
+```
+
+##### Favorite Button
+
+<Block sx={{ textAlign: 'center' }}></Block>
+
+```jsx
+// ----------------------------------------------------------------------
+
+const { enqueueSnackbar } = useSnackbar()
+const [favorite, setFavorite] = useState(favorited)
+
+const handleChangeFavorite = (event) => {
+  setFavorite(event.target.checked)
+}
+```
+
+##### Share Button
+
+<Block sx={{ textAlign: 'center' }}></Block>
+
+```jsx
+// ----------------------------------------------------------------------
+```
+
+##### AppStore Button
+
+<Block sx={{ '& h6': { m: 0 } }}></Block>
+
+```jsx
+// ----------------------------------------------------------------------
+```
